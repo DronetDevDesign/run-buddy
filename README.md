@@ -1,2 +1,14 @@
-# run-buddy
-Weight Training Website - Rice University coding bootcamp project
+# Run Buddy
+
+## Purpose
+A website that offers fitness training services.
+
+## Built With
+* HTML
+* CSS
+
+## Website
+https://dronetdevdesign.github.io/run-buddy/
+
+## Contribution
+Made with ❤️ by Ron

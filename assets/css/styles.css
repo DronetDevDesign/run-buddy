@@ -19,8 +19,6 @@ body {
 header {
   padding: 20px 35px;
   background-color: var(--teal);
-  /* position: fixed;
-  width: 100%; */
 }
 
 header h1 {
@@ -57,7 +55,7 @@ section {
 
 /* hero style start */
 .hero {
-  background-image: url('/images/hero-bg.jpg');
+  background-image: url("/images/hero-bg.jpg");
   height: 600px;
   background-size: cover;
   background-position: center;
