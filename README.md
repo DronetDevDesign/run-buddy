@@ -11,4 +11,4 @@ A website that offers fitness training services.
 https://dronetdevdesign.github.io/run-buddy/
 
 ## Contribution
-Made with ❤️ by Ron
+Made with ❤️ by Ron Dronet
