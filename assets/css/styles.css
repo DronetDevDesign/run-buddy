@@ -61,24 +61,35 @@ section {
 /* hero style start */
 .hero {
   background-image: url("/images/hero-bg.jpg");
-  height: 600px;
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* hero style end */
+
+.hero-cta {
+  width: 35%;
+  text-align: right;margin: 3.5%;color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
 }
 
-/* hero style end */
+.hero-cta h2 {
+  font-style: italic;
+  font-size: 55px;
+  color: var(--yellow);
+}
 
 /* hero form style start */
 .hero-form {
   background-color: var(--yellow);
   padding: 20px;
-  width: 500px;
   color: var(--drk-blue);
   border: 3px solid var(--drk-blue);
-  position: absolute;
-  bottom: 120px;
-  right: 140px;
+  width: 40%;
+  margin: 3.5%;
 }
 
 /* hero form style end */
@@ -270,18 +281,20 @@ section {
 footer {
   background-color: var(--yellow);
   width: 100%;
-  padding: 40px 35px
+  padding: 40px 35px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer h2 {
-  display: inline;
   color: var(--drk-blue);
   font-size: 30px;
   margin: 0;
 }
 
 footer div {
-  float: right;
   line-height: 1.5;
   text-align: right;
 }
