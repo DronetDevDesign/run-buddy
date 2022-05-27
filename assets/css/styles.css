@@ -130,16 +130,13 @@ section {
   cursor: pointer;
 }
 
-.intro {
-  text-align: center;
-}
-
 .section-title {
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
   font-size: 55px;
   color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
   border-bottom: 3px solid;
 }
 
@@ -157,10 +154,10 @@ section {
   width: 80%;
   font-size: 20px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .steps {
-  text-align: center;
   background: var(--yellow);
 }
 
@@ -189,7 +186,7 @@ section {
 }
 
 .trainers {
-  text-align: center;
+
 }
 
 .trainer {
@@ -211,14 +208,6 @@ section {
   width: 65%;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
 .trainer-bio h3 {
   font-size: 32px;
   margin-bottom: 8px;
@@ -237,7 +226,6 @@ section {
 
 /* reach out styles chart */
 .contact {
-  text-align: center;
   background: var(--drk-blue);
 }
 
@@ -301,4 +289,16 @@ footer div {
 
 footer a {
   color: var(--drk-blue);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.flex-row {
+  display: flex;
 }
