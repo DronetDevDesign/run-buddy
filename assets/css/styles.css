@@ -293,6 +293,10 @@ section {
   color: var(--yellow);
 }
 
+section .address-section {
+  max-width: 320px;
+}
+
 .contact-form input, .contact-form textarea {
   border: 1px solid var(--drk-blue);
   display: block;padding: 7px 15px;
