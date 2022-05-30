@@ -23,6 +23,13 @@ header {
   padding: 20px 35px;
   background-color: var(--teal);
   justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: 80%;
+  background-attachment: fixed;
 }
 
 header h1 {
@@ -30,6 +37,7 @@ header h1 {
   font-size: 36px;
   color: var(--yellow);
   margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -53,6 +61,13 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+  background: var(--yellow);
+  color: var(--drk-blue);
+  border-radius: 15px 15px;text-shadow: none;
 }
 
 section {
@@ -68,6 +83,8 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-position: 80%;
+  background-attachment: fixed;
 }
 /* hero style end */
 
@@ -82,16 +99,18 @@ section {
   font-style: italic;
   font-size: 55px;
   color: var(--yellow);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* hero form style start */
 .hero-form {
-  background-color: var(--yellow);
+  background-color: rgba(252, 225, 56, 0.8);
   padding: 20px;
   color: var(--drk-blue);
   border: 3px solid var(--drk-blue);
   width: 40%;
   margin: 3.5%;
+  border-radius: 15px;
 }
 
 /* hero form style end */
@@ -115,6 +134,13 @@ section {
   color: #024e76;
   width: 100%;
   margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.form-input:focus {
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
 }
 
 .hero-form label {
@@ -123,13 +149,18 @@ section {
   font-weight: bold;
 }
 
-.hero button {
+.hero-form button {
   padding: 10px 20px;
   background-color: var(--drk-blue);
   border: none;
   color: var(--yellow);
   font-size: 15px;
   cursor: pointer;
+  border-radius: 10px;
+}
+
+.hero-form button:hover {
+  background-color: var(--teal);
 }
 
 .section-title {
@@ -172,6 +203,10 @@ section {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+.step:nth-child(5) {
+  border-bottom: none;
 }
 
 .step h3 {
@@ -305,6 +340,7 @@ section .address-section {
   color: var(--drk-blue);
   width: 100%;margin-bottom: 15px;
   margin-top: 5px;
+  border-radius: 10px;
 }
 
 #contact-name, #contact-message {
@@ -318,6 +354,12 @@ section .address-section {
   text-align: center;
   padding: 15px 0;
   font-size: 16px;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: var(--yellow);
+  background: var(--teal);
 }
 
 /* reach out styles end */
@@ -349,7 +391,7 @@ footer a {
 
 footer .heart {
   position: relative;
-  margin-right: 15px;
+  margin-right: 10px;
   font-size: 22px;
   align-items: center;
   top: -5px;
@@ -375,6 +417,7 @@ footer .heart {
 /* SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
+    position: relative;
     padding-bottom: 0;
     justify-content: center;
   }
